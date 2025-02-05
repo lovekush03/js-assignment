@@ -1,0 +1,36 @@
+Q2 What are data types in Javascript? Explain the different types of data types with examples.
+
+Ans ->  There are two types of dataypes in Javascript 
+     1. primitive dataypes -> stored directly in the memory
+     2. non primitive dataypes -> stored as references in memory
+
+     primitive dataypes :
+         1 Number -> Stores both integers and floating-point numbers.
+                ex->  let x = 4;   let a = 12.54;
+         2 String -> Sequence of characters enclosed in "" or '' or ``
+                ex -> let name = "Lovepreet Singh";
+         3 Boolean -> represents true and false
+                ex -> let isCorrect = true;   let isChecked = false;
+         4 Undefined -> by default every variable that is initialised and not assigned a value is undefined
+                ex -> let a;   let name;
+         5 Null ->  null represents an absencs of value. we need to explicitly define a variable as null to be considered null datatype
+                ex -> let p = null;
+
+         6 BigInt -> BigInt is used to store large numbers 
+                ex -> let bigNum = 12345678418243n;
+         7 Symbol -> Creates unique values, often used as object keys.
+                ex ->  let sym = Symbol("id");
+
+    Non primitive dataypes:
+         1 Objects -> Collection of key-value pairs.
+                ex-> let person = { name: "Lovepreet Singh", age: 22 };
+         2 Array -> used to store multiple values inside one container
+                ex -> let nums = [1, 2, 3, 4];
+         3 Function ->  a function is used to specify a block of code with is reused multiple times in the coding block 
+                ex -> function greet() { 
+                            return "Hello"; 
+                        }
+
+        4 Date -> used to represent date and time
+                ex -> let now = new Date();
+
