@@ -18,6 +18,7 @@ const employees = [
   ];
 
 //1.
+console.log("Output for question 1" );
 let employee_salary_more_than_5000 = employees.filter((emp) => {
     return emp.salary > 5000;
 })
@@ -27,11 +28,11 @@ console.log(employee_salary_more_than_5000);
 let ageGroup = {};
 employees.forEach(emp => {
     if(!ageGroup[emp.age]){
-        ageGroup[emp.age] = []
-        // ageGroup[emp.age].push(emp);
+        ageGroup[emp.age] = [];
     }
     ageGroup[emp.age].push(emp);
 });
+console.log("Output for question 2");
 console.log(ageGroup)
 
 
@@ -42,4 +43,5 @@ let result = employees.filter((emp) => {
         return emp;
     }
 })
+console.log("Output for question 3 ");
 console.log(result);

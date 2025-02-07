@@ -1,7 +1,8 @@
 const url = "https://jsonplaceholder.typicode.com/users";
 
-async function fetchData(url){
+async function fetchData(){
     const response = await fetch(url);
+    //Display loading screen till fetch request in running
     document.querySelector(".loader").style.display = "block";
     if(!response.ok){
         throw new Error("API response delayed");
